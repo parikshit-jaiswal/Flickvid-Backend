@@ -3,7 +3,7 @@ class ApiError extends Error {
         statusCode,
         message = "Something went wrong",
         errors = [],
-        stack = ""
+        stack = "" //The stack trace (a string showing where the error occurred in the code). If not provided, it will be captured automatically.
     ) {
         super(message)
         this.statusCode = statusCode
