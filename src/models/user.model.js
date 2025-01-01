@@ -22,7 +22,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Password is required']
     },
-    fullname: {
+    fullName: {
         type: String,
         required: true,
         lowercase: true,
